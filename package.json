@@ -6,7 +6,6 @@
   "private": true,
   "dependencies": {
     "@mikro-orm/core": "^6.2.5",
-    "@mikro-orm/migrations": "^6.2.5",
     "@mikro-orm/nestjs": "^5.2.3",
     "@mikro-orm/postgresql": "^6.2.5",
     "@nestjs/common": "^10.0.2",
@@ -19,6 +18,7 @@
   },
   "devDependencies": {
     "@mikro-orm/cli": "^6.2.5",
+    "@mikro-orm/migrations": "^6.2.5",
     "@nestjs/schematics": "^10.0.1",
     "@nestjs/testing": "^10.0.2",
     "@nx/eslint": "19.0.1",

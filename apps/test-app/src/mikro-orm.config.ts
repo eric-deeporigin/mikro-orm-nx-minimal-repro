@@ -1,4 +1,5 @@
 import { defineConfig } from '@mikro-orm/postgresql';
+import { Migrator } from '@mikro-orm/migrations';
 
 export default defineConfig({
   dbName: process.env.POSTGRES_DATABASE,
@@ -13,4 +14,5 @@ export default defineConfig({
     pathTs: 'src/migrations',
   },
   debug: true,
+  extensions: [Migrator],
 });

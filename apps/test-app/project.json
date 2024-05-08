@@ -24,9 +24,14 @@
       "executor": "nx:run-commands",
       "options": {
         "cwd": "apps/test-app",
-        "commands": [
-          "mikro-orm migration:create --initial --config ./src/mikro-orm.config.ts"
-        ]
+        "commands": ["mikro-orm migration:create "]
+      }
+    },
+    "mikro-orm-debug": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/test-app",
+        "commands": ["mikro-orm debug"]
       }
     }
   }

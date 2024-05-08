@@ -1,0 +1,15 @@
+{
+  "name": "test-app",
+  "version": "1.0.0",
+  "private": true,
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
+  },
+  "devDependencies": {
+    "@mikro-orm/cli": "^6.2.5"
+  }
+}

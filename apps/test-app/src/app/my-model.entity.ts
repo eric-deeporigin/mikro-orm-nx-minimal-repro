@@ -3,6 +3,7 @@ import {
   Entity,
   Enum,
   ManyToMany,
+  PrimaryKey,
   Property,
 } from '@mikro-orm/core';
 
@@ -30,6 +31,8 @@ export interface PermissionCondition {
 
 @Entity({ tableName: 'permissions' })
 export class PermissionModel {
+  @PrimaryKey()
+  id!: string;
   @Enum(() => PermissionAction)
   action!: PermissionAction;
 
@@ -42,6 +45,9 @@ export class PermissionModel {
 
 @Entity({ tableName: 'roles' })
 export class RoleModel {
+  @PrimaryKey()
+  id!: string;
+
   @Enum(() => RoleName)
   name!: RoleName;
 
