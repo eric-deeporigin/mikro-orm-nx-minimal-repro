@@ -1,0 +1,10 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:15.5
+    environment:
+      POSTGRES_USER: local
+      POSTGRES_PASSWORD: local
+      POSTGRES_DB: local
+    ports:
+      - 23455:5432

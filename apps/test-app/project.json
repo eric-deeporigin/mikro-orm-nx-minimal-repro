@@ -19,6 +19,15 @@
           "buildTarget": "test-app:build:production"
         }
       }
+    },
+    "migration-create": {
+      "executor": "nx:run-commands",
+      "options": {
+        "cwd": "apps/test-app",
+        "commands": [
+          "mikro-orm migration:create --initial --config ./src/mikro-orm.config.ts"
+        ]
+      }
     }
   }
 }
